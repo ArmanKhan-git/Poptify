@@ -58,6 +58,11 @@ const playMusic = (track) => {
     console.log("Song path:", songPath);  // Log the path to ensure it's correct
     currentSong.src = songPath;
     currentSong.play();
+    // when song starts playing the play svg changes to pause svg
+    currentSong.addEventListener("play", () => {
+        let playButton = document.querySelector(".playbar .playbtn img");
+        playButton.src = "assets/pause.svg";
+    });
     document.querySelector(".songinfo").innerHTML = track;
     document.querySelector(".songtime").innerHTML = "00:00 / 00:00";
     document.querySelectorAll(".songList ul li").forEach(li => {
