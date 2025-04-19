@@ -118,12 +118,13 @@ async function displayAlbums() {
             console.log("Fetching Songs for folder:", currFolder);
             songs = await getSongs(`songs/${currFolder}`);
             console.log("Songs fetched:", songs);
+            
 
             // If songs are found, auto play the first one
             if (songs.length > 0) {
                 playMusic(songs[0]);  // Play the first song of the folder
             }
-
+            document.querySelector("playbar").style.bottom="0"
           
             let playButton= document.querySelector(".playbar .playbtn img")
            
