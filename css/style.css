@@ -467,9 +467,7 @@ input[type=range]{
     .cardContainer{
         height: 44vh;
     }
-    .card{
-        width: 42vw;
-    }
+   
     .playbtn{
         opacity: 0;
     }
