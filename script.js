@@ -113,8 +113,11 @@ async function displayAlbums() {
                 playMusic(songs[0]);  // Play the first song of the folder
             }
 
-            // to change the play/pause on card select
+          
             let playButton= document.querySelector(".playbar .playbtn img")
+            playButton.src = "assets/pause.svg"; 
+
+            // to change the play/pause on card select
             if(currentSong.paused){
                 playButton.src="assets/pause.svg"
             }
