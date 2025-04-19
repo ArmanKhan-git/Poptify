@@ -393,7 +393,7 @@ input[type=range]{
     .left{
         position: absolute;
         left: -120%;
-        transition: all .3s;
+        transition: all .1s;
         z-index: 1;
         width: 380px;
         /* height: 99vh; */
@@ -452,7 +452,7 @@ input[type=range]{
         top: 137px;
         right: 250px;
         position: absolute;
-        opacity: var(--a);
+        opacity: 0;
         transition: all 1s ease-out;
         
     }
@@ -465,6 +465,12 @@ input[type=range]{
         width: 400px;
     }
     .cardContainer{
-        height: 48vh;
+        height: 44vh;
+    }
+    .card{
+        width: 42vw;
+    }
+    .playbtn{
+        opacity: 0;
     }
 }

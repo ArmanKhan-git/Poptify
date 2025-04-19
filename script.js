@@ -246,6 +246,8 @@ async function main() {
 
         if (index > 0) {
             playMusic(songs[index - 1]);
+            let playButton = document.querySelector(".playbar .playbtn img");
+        playButton.src = "assets/pause.svg";
         }
     });
 
@@ -255,7 +257,10 @@ async function main() {
 
         if (index < songs.length - 1) {
             playMusic(songs[index + 1]);
+            let playButton = document.querySelector(".playbar .playbtn img");
+            playButton.src = "assets/pause.svg";
         }
+        
     });
 
     //  to play next song automatically
@@ -266,10 +271,14 @@ currentSong.addEventListener("ended", () => {
     // If the current song is not the last song, play the next song
     if (index < songs.length - 1) {
         playMusic(songs[index + 1]);  // Play the next song in the list
-    } else {
+        let playButton = document.querySelector(".playbar .playbtn img");
+        playButton.src = "assets/pause.svg";    
+    }
+    else {
         console.log("Reached the end of the playlist.");
         // Optionally, you can loop back to the first song or stop the player.
     }
+    playButton.src = "assets/pause.svg";
 });
 
 
