@@ -125,6 +125,7 @@ async function displayAlbums() {
                 playMusic(songs[0]);  // Play the first song of the folder
             }
             document.querySelector("playbar").style.bottom="0"
+            
           
             let playButton= document.querySelector(".playbar .playbtn img")
            
