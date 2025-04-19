@@ -98,7 +98,7 @@ async function displayAlbums() {
                     <div class="playbtn">
                         <img src="assets/play-button.svg" alt="playbutton">
                     </div>
-                    <img src="songs/${folder}/cover.JPG" alt="cover">
+                    <img src="songs/${folder}/cover.jpg" alt="cover">
                     <h2>${info.title}</h2>
                     <p>${info.description}</p>
                 </div>
