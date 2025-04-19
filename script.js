@@ -59,9 +59,9 @@ const playMusic = (track) => {
     currentSong.src = songPath;
     currentSong.play();
     
-    // Clean up and set a fresh 'play' event listener
-    currentSong.removeEventListener("play", updatePlayIcon); // prevent duplicate
-    currentSong.addEventListener("play", updatePlayIcon);
+    // // Clean up and set a fresh 'play' event listener
+    // currentSong.removeEventListener("play", updatePlayIcon); // prevent duplicate
+    // currentSong.addEventListener("play", updatePlayIcon);
 
 
     document.querySelector(".songinfo").innerHTML = track;
@@ -126,7 +126,7 @@ async function displayAlbums() {
 
           
             let playButton= document.querySelector(".playbar .playbtn img")
-            playButton.src = "assets/pause.svg"; 
+           
 
             // to change the play/pause on card select
             if(currentSong.paused){
@@ -258,7 +258,7 @@ async function main() {
         if (index > 0) {
             playMusic(songs[index - 1]);
             let playButton = document.querySelector(".playbar .playbtn img");
-        playButton.src = "assets/pause.svg";
+            playButton.src = "assets/pause.svg";
         }
     });
 
